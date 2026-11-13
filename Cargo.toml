@@ -1,0 +1,13 @@
+[package]
+name = "cormanlisp"
+version = "0.1.0"
+edition = "2024"
+description = "CormanLisp with a Rust kernel for AMD64 Linux"
+license-file = "LICENSE.txt"
+
+[dependencies]
+iced-x86 = { version = "1.22.0", default-features = false, features = ["std", "code_asm", "decoder", "intel"] }
+libc = "0.2"
+
+[profile.dev]
+panic = "unwind"

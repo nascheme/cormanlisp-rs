@@ -1,0 +1,240 @@
+cormanlisp-rs licensing and third-party notices
+===============================================
+
+Original work contributed to this project is licensed under the MIT License
+below. This includes original Rust code, Lisp code, tests, and documentation,
+except where a file carries a different notice.
+
+This project is a port of Corman Lisp and includes copied and adapted sources,
+notably in lisp/sys/, as well as work derived from its kernel. The Corman Lisp
+license and the additional upstream notices below continue to apply to that
+material. The MIT license for original work does not replace or remove any
+third-party copyright, license, or attribution notice.
+
+When redistributing source or binaries (including saved Lisp images), retain
+the applicable notices and license texts. Keep the notices in individual source
+files as well as this file.
+
+1. Original project work - MIT License
+======================================
+
+Copyright (c) 2026 Neil Schemenauer and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+2. Corman Lisp - MIT License
+============================
+
+The following is the upstream Corman Lisp LICENSE.txt.
+
+Copyright (c) 2015-2018 Corman Technologies Inc. and contributors.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Additional copyright notices retained in the Corman Lisp sources:
+- Portions Copyright (C) 1999 Vassili Bykov (lisp/sys/fast-class-of.lisp).
+- Portions Copyright (c) 2000 Vassili Bykov (lisp/sys/sequence.lisp and
+  lisp/sys/sequences.lisp).
+
+3. Closette (lisp/sys/clos.lisp)
+================================
+
+Closette Version 1.0 (February 10, 1991)
+Copyright (c) 1990, 1991 Xerox Corporation. All rights reserved.
+
+Use and copying of this software and preparation of derivative works
+based upon this software are permitted.  Any distribution of this
+software or derivative works must comply with all applicable United
+States export control laws.
+
+This software is made available AS IS, and Xerox Corporation makes no
+warranty about the software, its performance or its conformity to any
+specification.
+
+Closette is an implementation of a subset of CLOS with a metaobject
+protocol as described in "The Art of The Metaobject Protocol",
+MIT Press, 1991.
+
+4. LOOP (lisp/sys/loop.lisp)
+============================
+
+Copying and distribution of the relevant LOOP portions is by permission of
+M.I.T. and Symbolics, as provided in the notices below.
+
+Portions of LOOP are Copyright (c) 1986 by the Massachusetts Institute of Technology.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the M.I.T. copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.  The names "M.I.T." and "Massachusetts
+Institute of Technology" may not be used in advertising or publicity
+pertaining to distribution of the software without specific, written
+prior permission.  Notice must be given in supporting documentation that
+copying distribution is by permission of M.I.T.  M.I.T. makes no
+representations about the suitability of this software for any purpose.
+It is provided "as is" without express or implied warranty.
+
+     Massachusetts Institute of Technology
+     77 Massachusetts Avenue
+     Cambridge, Massachusetts  02139
+     United States of America
+     +1-617-253-1000
+
+Portions of LOOP are Copyright (c) 1989, 1990, 1991, 1992 by Symbolics, Inc.
+All Rights Reserved.
+
+Permission to use, copy, modify and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the Symbolics copyright notice appear in all copies and
+that both that copyright notice and this permission notice appear in
+supporting documentation.  The name "Symbolics" may not be used in
+advertising or publicity pertaining to distribution of the software
+without specific, written prior permission.  Notice must be given in
+supporting documentation that copying distribution is by permission of
+Symbolics.  Symbolics makes no representations about the suitability of
+this software for any purpose.  It is provided "as is" without express
+or implied warranty.
+
+Symbolics, CLOE Runtime, and Minima are trademarks, and CLOE, Genera,
+and Zetalisp are registered trademarks of Symbolics, Inc.
+
+     Symbolics, Inc.
+     8 New England Executive Park, East
+     Burlington, Massachusetts  01803
+     United States of America
+     +1-617-221-1000
+
+5. CMU Common Lisp (lisp/sys/random.lisp)
+=========================================
+
+The upstream source includes this notice for the underlying random-number code:
+
+This code was written as part of the CMU Common Lisp project at
+Carnegie Mellon University, and has been placed in the public domain.
+
+Corman Lisp modifications remain subject to the Corman Lisp license above.
+
+6. Rust dependencies
+====================
+
+The dependency versions below correspond to Cargo.lock. These notices are
+included for redistribution of binaries containing these dependencies.
+libc and lazy_static offer MIT OR Apache-2.0; the MIT option is used here.
+Dependencies remain separately licensed and are not relicensed by this project.
+
+iced-x86 1.22.0 - MIT
+---------------------
+
+https://github.com/icedland/iced
+Copyright (C) 2018-present iced project and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+libc 0.2.191 - MIT option
+-------------------------
+
+Copyright (c) The Rust Project Developers
+
+Permission is hereby granted, free of charge, to any
+person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the
+Software without restriction, including without
+limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions
+of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+lazy_static 1.5.1 - MIT option (transitive dependency of iced-x86)
+------------------------------------------------------------------
+
+Permission is hereby granted, free of charge, to any
+person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the
+Software without restriction, including without
+limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions
+of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
