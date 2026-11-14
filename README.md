@@ -3,6 +3,9 @@
 An experimental port of [Corman Lisp](https://github.com/sharplispers/cormanlisp)
 to **64-bit x86 Linux**, with a kernel written in Rust.
 
+If you prefer Clojure rather than Common Lisp, see [Corten
+Clojure](https://github.com/nascheme/corten-clojure).
+
 Corman Lisp was originally a Common Lisp implementation for 32-bit Windows,
 with a C++ kernel and much of its standard library written in Lisp. This
 project replaces the kernel, compiler backend, and platform-dependent runtime
